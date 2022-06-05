@@ -1,7 +1,6 @@
 //start work on 2.10  Authentication
 const { join } = require('lodash');
 
-// This is the server file for task 2.8 with mongoose with real database 
 const express = require('express');
 const res = require('express/lib/response');
 const { v4 } = require('uuid');
@@ -13,16 +12,12 @@ const { check, validationResult } = require('express-validator');
 const mongoose = require('mongoose');
 const Models = require('./models.js');
 //const { update } = require('lodash');
-const passport = require('passport');
+
 
 
 const Movies = Models.Movie;
 const Users = Models.User;
 
-let auth = require('./auth')(app);
-require('./passport');
-
-app.use(passport.initialize());
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,8 +25,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public")); // serve static files
 //app.use(morgan("common")); // log requests to terminal
 
+const passport = require('passport');
+require('./passport');
 
-
+app.use(passport.initialize());
 
 const cors = require('cors');
 app.use(cors());
@@ -51,14 +48,16 @@ app.use(
 
 
 //Old connect
-//mongoose.connect('mongodb://localhost:27017/szaFlix', { useNewUrlParser: true, useUnifiedTopology: true })
-//.then(() => console.log('connected to db'))
-//.catch( (err) => console.log(err));
+mongoose.connect('mongodb://localhost:27017/szaFlix', { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => console.log('connected to db'))
+.catch( (err) => console.log(err));
 
 //mongodb+srv://sza:test123@runflix.khvbcgv.mongodb.net/szaFlixDB/?retryWrites=true&w=majority
-mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('connected to db'))
-  .catch( (err) => console.log(err));
+
+//NEW COONECT 
+// mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => console.log('connected to db'))
+//   .catch( (err) => console.log(err));
 
 app.get('/', (req, res) => {
   res.send('<h1>Hello Movies server  </h1>')
@@ -338,10 +337,10 @@ app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { se
 });
 
 //localport disabled
-//app.listen(8080, () => console.log('listening on 8080'));   
+app.listen(8080, () => console.log('listening on 8080'));   
 
-const port = process.env.PORT || 8080;
-app.listen(port, '0.0.0.0', () => {
-  console.log('Listening on Port ' + port);
-});
+// const port = process.env.PORT || 8080;
+// app.listen(port, '0.0.0.0', () => {
+//   console.log('Listening on Port ' + port);
+// });
 
