@@ -46,15 +46,15 @@ res.send(responseText);
 
 //Add - Create user
 app.post('/users',(req,res) => {
-   Users.findOne({ username: req.body.USERNAME, userid:req.body.id})
+   Users.findOne({ username: req.body.username, userid:req.body.id})
    .then((user)=> {
       if ((user)) {
         console.log(user,'userID', user.id);
-        return res.status(401).send(req.body.USERNAME + ' already exists')
+        return res.status(401).send(req.body.username + ' already exists')
       } else {
         Users
           .create({
-            username: req.body.USERNAME,
+            username: req.body.username,
             password: req.body.password,
             id:req.body.id, 
             email: req.body.email,

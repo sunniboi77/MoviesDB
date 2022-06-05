@@ -1,4 +1,5 @@
-//2.9 
+
+//2.9 working in this file 5-June 2022
 const mongoose = require('mongoose');
 //const bcrypt = require('bcrypt');
 
@@ -15,23 +16,30 @@ let movieSchema = mongoose.Schema({
       bio: String
     },
     actors: [String],
-    ImagePath: String,
-    Featured: Boolean
+      ImagePath: String,
+      Featured: Boolean,
+      Year: Number,
+      Rated: String,
+      Runtime: String,
+      Awards :String, 
   });
 
   let userSchema = mongoose.Schema({
-      username : {type: String, required:true},
-      password: {type: String, required: true},
+      Username : {type: String, required:true},
+      Password: {type: String, required: true},
       id:{type:String,required:false}, 
-      email : {type: String, required: true},
+      Email : {type: String, required: false},
       birthDay : Date,
-      favmovies : [{ type: mongoose.Schema.Types.ObjectId,ref:'Movie'}],
+      Favmovies : [{ type: mongoose.Schema.Types.ObjectId,ref:'Movie'}],
     
   });
 
-  let Movie = mongoose.model('Movie',movieSchema);
-  let User = mongoose.model('User',userSchema);
+  let Movie = mongoose.model('movies',movieSchema);
+  let User = mongoose.model('users',userSchema);
 
   module.exports.Movie = Movie;
   module.exports.User = User; 
 
+
+
+  
