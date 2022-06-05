@@ -1,0 +1,28 @@
+URL: /documentation
+Timestamp: Sat Jun 04 2022 22:43:09 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /
+Timestamp: Sun Jun 05 2022 09:57:44 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /
+Timestamp: Sun Jun 05 2022 09:58:26 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /
+Timestamp: Sun Jun 05 2022 10:00:57 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /null
+Timestamp: Sun Jun 05 2022 10:00:58 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /favicon.ico
+Timestamp: Sun Jun 05 2022 10:00:58 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /
+Timestamp: Sun Jun 05 2022 10:10:45 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /null
+Timestamp: Sun Jun 05 2022 10:10:45 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+URL: /favicon.ico
+Timestamp: Sun Jun 05 2022 10:10:45 GMT+0200 (Mitteleuropäische Sommerzeit)
+
+::1 - - [05/Jun/2022:08:56:20 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36"
