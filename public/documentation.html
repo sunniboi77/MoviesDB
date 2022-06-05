@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .main {
+      display: flex;
+      padding-top: 50px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* border:solid black 1px; */
+      text-align: center;
+    }
+
+    .container .head {
+      background-color: blue;
+      color: white;
+
+    }
+
+
+    .item {
+      height: 65px;
+      border: solid 1px black;
+    }
+
+    .c1 {
+      width: 22%;
+      align-content: stretch;
+    }
+
+    .c2 {
+      flex-basis: 22%;
+    }
+
+    .c3 {
+      flex-basis: 14%;
+    }
+
+    .c4 {
+
+      flex-basis: 29%;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Movie node app</title>
+
+
+</head>
+
+<body>
+  <div>
+    <h1>myFlix</h1>
+    <h2>Movie Web Application</h2>
+    <p>myFlix is a web application that will grant users access to information about various
+      movies, directors, and genres. The user will be able to use the myFlix application
+      whenever they like to read information about different movies or update their user information,
+      for instance, their list of Favorite Movies.
+    </p>
+
+    <div class="main">
+      <div class="container">
+        <div class="item head c1">Business Logic</div>
+        <div class="item head c2">Url</div>
+        <div class="item head c3">HTTP</div>
+        <div class="item head c4">Request body format</div>
+        <div class="item c1">Get list of all movies</div>
+        <div class="item c2">/movies</div>
+        <div class="item c3">GET</div>
+        <div class="item c4">none</div>
+        <div class="item c1">Get list of all movies</div>
+        <div class="item c2">/users</div>
+        <div class="item c3">GET</div>
+        <div class="item c4">none</div>
+        <div class="item c1">Create user</div>
+        <div class="item c2">/[Users]</div>
+        <div class="item c3">POST</div>
+        <div class="item c4">A JSON object, {username,passoword,id,email,favMovies:[objectid,...] }</div>
+        <div class="item c1">Delete user</div>
+        <div class="item c2">/Users/[username]</div>
+        <div class="item c3">DELETE</div>
+        <div class="item c4">none</div>
+        <div class="item c1">Update user</div>
+        <div class="item c2">/Users/[Id]</div>
+        <div class="item c3">PUT</div>
+        <div class="item c4">A JSON object, {username,passoword,id,email,favMovies:[objectid,...] }</div>
+        <div class="item c1">Get / Find movies by director</div>
+        <div class="item c2">/movies/directors/[directorName]</div>
+        <div class="item c3">GET</div>
+        <div class="item c4">none</div>
+        <div class="item c1">Update users favorite movies</div>
+        <div class="item c2">/Users/[Id]/[movie_id]</div>
+        <div class="item c3">POST</div>
+        <div class="item c4">-</div>
+        <div class="item c1">Update users favorite movies</div>
+        <div class="item c2">/Users/[username]/movies/[movie_id]</div>
+        <div class="item c3">POST</div>
+        <div class="item c4">/Users/[username]/movies/[movie_id]</div>
+        <div class="item c1">Delete users favorite movies</div>
+        <div class="item c2">/Users/[username]/movies/[movie_id]</div>
+        <div class="item c3">DLETE</div>
+        <div class="item c4">/Users/[username]/movies/[movie_id]</div>
+      </div>
+
+
+    </div>
+</body>
+
+</html>

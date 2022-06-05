@@ -26,3 +26,17 @@ URL: /favicon.ico
 Timestamp: Sun Jun 05 2022 10:10:45 GMT+0200 (Mitteleuropäische Sommerzeit)
 
 ::1 - - [05/Jun/2022:08:56:20 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36"
+::1 - - [05/Jun/2022:09:09:54 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:09:54 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:10:52 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:11:03 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:11:11 +0000] "GET /users HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:11:17 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/documentation" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:11:52 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/documentation" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:11:57 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/documentation" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:16:29 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/movies" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:16:39 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/documentation" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:17:45 +0000] "GET /index HTTP/1.1" 404 144 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:17:56 +0000] "GET /index.html HTTP/1.1" 404 149 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:09:18:10 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
+::1 - - [05/Jun/2022:10:07:30 +0000] "GET /null HTTP/1.1" 404 143 "http://localhost:8080/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36"
