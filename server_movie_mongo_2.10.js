@@ -1,4 +1,4 @@
-//2.10 working in this file 5-June 2022
+//2.10 working in this file 6-June 2022
 //database is locally available in mongod and mongoshell 
 //database name is szaFlix 
 
@@ -50,8 +50,12 @@ let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
+//commented out for 2.10
+//mongoose.connect('mongodb://localhost:27017/szaFlix', { useNewUrlParser: true, useUnifiedTopology: true });
 
-mongoose.connect('mongodb://localhost:27017/szaFlix', { useNewUrlParser: true, useUnifiedTopology: true });
+//2.10 Online connection
+mongoose.connect('process.env.CONNECTION_URI', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 app.get('/',(req,res) => {
   res.send('<h1>Hello Movies server  </h1>')

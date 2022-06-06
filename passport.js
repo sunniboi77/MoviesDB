@@ -1,3 +1,5 @@
+//2.10 v1 - not final yet -  6-June 2022
+
 const passport = require('passport'),
   LocalStrategy = require('passport-local').Strategy,
   Models = require('./models.js'),
