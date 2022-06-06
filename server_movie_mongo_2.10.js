@@ -56,6 +56,7 @@ require('./passport');
 //2.10 Online connection
 mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
+// ----------------- CRUD -------------------------------
 
 app.get('/',(req,res) => {
   res.send('<h1>Hello Movies server  </h1>')
@@ -350,6 +351,11 @@ app.delete('/users/:Username/movies/:MovieID',passport.authenticate('jwt',{sessi
         res.json(updatedUser);
       }
     });
+});
+// Create an error-handling middleware function that will log all application-level errors to the terminal
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
 });
 
 // 2.9 old code 
