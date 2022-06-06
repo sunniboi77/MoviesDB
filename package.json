@@ -5,8 +5,8 @@
   "main": "server_movie_mongo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server_movie_mongo_2.9.js",
-    "dev": "nodemon server_movie_mongo_2.9.js"
+    "start": "node server_movie_mongo_2.10.js",
+    "dev": "nodemon server_movie_mongo_2.10.js"
   },
   "keywords": [],
   "author": "",
