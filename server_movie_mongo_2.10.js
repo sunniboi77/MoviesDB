@@ -1,6 +1,7 @@
 //2.10 working in this file 6-June 2022
 //database is locally available in mongod and mongoshell 
-//database name is szaFlix 
+//local database name is szaFlix 
+// https://moviesflows.herokuapp.com n
 
 const { join } = require('lodash');
 
@@ -258,7 +259,9 @@ app.get('/users/id/:ID',passport.authenticate('jwt',{session:false}), (req,res) 
 
 
 //T1.Get all movie
-app.get('/movies',passport.authenticate('jwt',{session:false}), (req,res) => {
+//authentication removed for test purposes 
+//passport.authenticate('jwt',{session:false})
+app.get('/movies', (req,res) => {
   Movies.find()
   .then((movies) => {
     res.status(201).json(movies);
